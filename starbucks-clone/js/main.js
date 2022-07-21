@@ -100,22 +100,22 @@ promotionToggleBtn .addEventListener("click",function(){
 //     });
 // });
 
-// let scrollYpos;
-// window.addEventListener("scroll",function(){
-//     scrollYpos = window .scrollY;
-//     console.log(scrollYpos);
-// })
+let scrollYpos;
+window.addEventListener("scroll",function(){
+    scrollYpos = window .scrollY;
+    console.log(scrollYpos);
+})
 
-// window.onload = () => {
-//      const visualInner = document.querySelector(".visual .inner");
-//      visualInner.classList.add("animate");
-//     };
+window.onload = () => {
+     const visualInner = document.querySelector(".visual .inner");
+     visualInner.classList.add("animate");
+    };
 
 
-// if (scrollYpos > 300) {
-//         const peruAnimate = document.querySelector(".peru");
-//         peruAnimate.classList.add("animate");
-//          }
+if (scrollYpos > 300) {
+        const peruAnimate = document.querySelector(".peru");
+        peruAnimate.classList.add("animate");
+         }
 
 let position, setPosition = useState(0);
 
