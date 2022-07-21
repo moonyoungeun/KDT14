@@ -100,11 +100,49 @@ promotionToggleBtn .addEventListener("click",function(){
 //     });
 // });
 
+
 let scrollYpos;
-window.addEventListener("scroll",function(){
-    scrollYpos = window .scrollY;
-    console.log(scrollYpos);
-})
+window.addEventListener("scroll", function () {
+  scrollYpos = window.scrollY;
+  console.log(scrollYpos);
+  if(scrollYpos > 0) {
+    const visualAnimate = document.querySelector(".visual");
+    visualAnimate.classList.add("animate");
+    console.log(visualAnimate);
+    console.log("비주얼 성공");
+  } if ( 300 < scrollYpos ) {
+    const peruAnimate = document.querySelector(".peru");
+    peruAnimate.classList.add("animate");
+    console.log(peruAnimate);
+    console.log("페루성공");}
+
+    if ( 1300 < scrollYpos) {
+    const indonesiaAnimate = document.querySelector(".indonesia");
+    indonesiaAnimate.classList.add("animate");
+    console.log(indonesiaAnimate);
+    console.log("인도네시아 성공");}
+
+    if( 1800 < scrollYpos ) {
+    const favoriteAnimate = document.querySelector(".favorite");
+    favoriteAnimate.classList.add("animate");
+    console.log(favoriteAnimate);
+    console.log("favorite 성공");}
+
+    if(scrollYpos > 2500) {
+    const magazineAnimate = document.querySelector(".magazine");
+    magazineAnimate.classList.add("animate");
+    console.log(magazineAnimate);
+    console.log("magazine 성공");}
+
+    if(scrollYpos > 2700) {
+        const storeAnimate = document.querySelector(".store");
+        storeAnimate.classList.add("animate");
+        console.log(storeAnimate);
+        console.log("store 성공");}})
+
+
+   
+
 
 window.onload = () => {
      const visualInner = document.querySelector(".visual .inner");
@@ -112,22 +150,17 @@ window.onload = () => {
     };
 
 
-if (scrollYpos > 300) {
-        const peruAnimate = document.querySelector(".peru");
-        peruAnimate.classList.add("animate");
-         }
+// let position, setPosition = useState(0);
 
-let position, setPosition = useState(0);
+// function onScroll(){
+//     setPosition(window,scrollY);
+// }
 
-function onScroll(){
-    setPosition(window,scrollY);
-}
-
-useEffect(()=>{
-    window.addEventListener("scroll", onscroll);
-    return()=>{
-        window.removeEventListener("scroll",onScroll);
-    }
-});
+// useEffect(()=>{
+//     window.addEventListener("scroll", onscroll);
+//     return()=>{
+//         window.removeEventListener("scroll",onScroll);
+//     }
+// });
         
     
